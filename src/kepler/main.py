@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import math
 
-from kepler_orbit import KeplerElements, kepler_to_rv
+from .kepler_orbit import KeplerElements, kepler_to_rv
 
 
 def demo() -> None:

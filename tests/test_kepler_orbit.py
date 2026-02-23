@@ -5,6 +5,7 @@ import numpy as np
 from kepler.kepler_orbit import KeplerElements, kepler_from_heights, kepler_to_rv
 from kepler.constants import MU_EARTH, R_EARTH
 
+import pytest
 
 def test_kepler_from_heights_circular():
     H = 400_000.0
