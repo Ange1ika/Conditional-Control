@@ -9,7 +9,10 @@ from __future__ import annotations
 
 import math
 
-from .kepler_orbit import KeplerElements, kepler_to_rv
+import numpy as np
+
+from gravity import gravity_normal_earth
+from kepler_orbit import KeplerElements, kepler_to_rv
 
 
 def demo() -> None:
@@ -33,5 +36,9 @@ def demo() -> None:
 
 
 if __name__ == "__main__":
-    demo()
+    # demo()
+
+    g = gravity_normal_earth(6400e3, 0, 0)
+    print(g)
+    print(np.linalg.norm(g))
 

@@ -13,7 +13,7 @@ from typing import Tuple
 
 import numpy as np
 
-from .constants import MU_EARTH, R_EARTH
+from constants import MU_EARTH, R_EARTH
 
 
 @dataclass
